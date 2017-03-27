@@ -1,0 +1,32 @@
+/* Although the file suffix is CSS, but it will be less compilation */
+/* The CSS specification: https://github.com/fast-flow/trees */
+/* Base style */
+.r-intro {
+    overflow:hidden;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.r-intro > * {
+    z-index: 1451;
+}
+.r-intro-mark {
+    position: absolute;
+    z-index: 1450;
+    display: block;
+    border-width: 5000px;
+    border-style: solid;
+}
+.r-intro-hide {
+    display: none !important;
+}
+/* Configurable style */
+.r-intro-mark {
+    border-color: #000;
+
+    opacity:0.5;
+    -khtml-opacity:0.5;
+    -moz-opacity:0.5;
+    filter:alpha(opacity=50);/* IE9+ */
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);/* IE */
+}
